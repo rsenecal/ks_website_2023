@@ -1,0 +1,160 @@
+.ks__navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem 6rem;
+}
+
+.ks__navbar-links {
+    flex: 1;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+
+}
+
+.ks__navbar-links_logo {
+    margin-right: 2rem;
+
+}
+
+.ks__navbar-links_logo img {
+    width: 200px;
+    height: 24px;
+
+}
+
+.ks__navbar-links_container {
+    display: flex;
+    flex-direction: row;
+}
+
+.ks__navbar-sign {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.ks__navbar-links_container p,
+/* .ks__navbar-sign p, */
+.ks__navbar-menu_container p {
+    color: #5A6069;
+    font-family: var(--font-family);
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+
+    margin: 0 1rem;
+    cursor: pointer;
+
+    font-style: normal;
+
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.01em;
+
+}
+
+
+.ks__navbar-sign button {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 20px;
+    margin: 0.25rem;
+    width: 117px;
+    height: 48px;
+    background: transparent;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 16px;
+    line-height: 28px;
+    
+    /* Button/Primary/500 (Base) */
+    
+    border: 1px solid #58D1ED;
+    border-radius: 4px;
+    
+}
+
+.ks__navbar-menu{
+    margin-left: 1rem;
+
+    display: none;
+    position: relative;
+}
+
+.ks__navbar-menu svg {
+    cursor: pointer;
+
+}
+
+
+
+.ks__navbar-menu_container {
+
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    flex-direction:column;
+
+    text-align: end;
+    background: var(--color-footer);
+    gap: 10px;
+    padding: 2rem;
+    position: absolute;
+    top: 40px;
+    right: 0;
+    margin-top: 1rem;
+    min-width: 210px;
+    border-radius: 5px;
+    box-shadow: 0 0 5 rgba(0,0,0,0.2);
+}
+
+.ks__navbar-menu_container p {
+    margin: 1rem 0;
+}
+
+.ks__navbar-menu_container-links-sign {
+    display: none;
+}
+
+@media screen and (max-width: 1050px) {
+    .ks__navbar-links_container{
+        display: none;
+    }
+    .ks__navbar-menu {
+        display: flex;
+    }
+    
+}
+
+
+@media screen and (max-width: 700px) {
+    .ks__navbar {
+        padding: 2rem 4rem;
+    }
+    
+}
+
+@media screen and (max-width: 550px) {
+    .ks__navbar {
+        padding: 2rem;
+    }
+    .ks__navbar-sign {
+        display: none;
+    }
+    
+    .ks__navbar-links_container {
+        top: 20px;
+    }
+    .ks__navbar-menu_container-links-sign {
+        display: block;
+    }
+}
+
+#demo_btn {
+    background: #58D1ED;
+    color: #fff;
+}
