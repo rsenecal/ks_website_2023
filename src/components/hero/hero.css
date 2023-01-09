@@ -1,0 +1,22 @@
+.ks__header {
+    display: flex;
+}
+
+ks__header-content {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+
+    margin-right: 5rem;
+}
+
+.ks__header-content h1 {
+    font-family: var(--font-family);
+    font-style: normal;
+    font-weight: 800;
+    font-size: 50px;
+    line-height: 110%;
+    font-feature-settings: 'salt' on, 'lign' off;
+}
