@@ -22,7 +22,7 @@ const Navbar = () => {
                 <img src={logo} alt="logo" />
             </div>
             <div className='ks__navbar-links_container'>
-                <Menu />
+                {/* <Menu /> */}
             </div>
         </div>
 
@@ -32,7 +32,7 @@ const Navbar = () => {
                 <button id='demo_btn' type='button'>Demo</button>
         </div>
 
-    <div className='ks_navbar-menu'>
+    <div className='ks__navbar-menu'>
        { toggleMenu 
         ? <RiCloseLine  color='#25282B' size={27} onClick={() => setToggleMenu(false)} />
         : <RiMenu3Line  color='#25282B' size={27} onClick={() => setToggleMenu(true)} />

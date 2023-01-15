@@ -10,7 +10,6 @@
     display: flex;
     justify-content: flex-start;
     align-items: center;
-
 }
 
 .ks__navbar-links_logo {
@@ -36,7 +35,6 @@
 }
 
 .ks__navbar-links_container p,
-/* .ks__navbar-sign p, */
 .ks__navbar-menu_container p {
     color: #5A6069;
     font-family: var(--font-family);
@@ -55,7 +53,6 @@
 
 }
 
-
 .ks__navbar-sign button {
     display: flex;
     flex-direction: row;
@@ -70,6 +67,7 @@
     font-style: normal;
     font-size: 16px;
     line-height: 28px;
+    cursor: pointer ;
     
     /* Button/Primary/500 (Base) */
     
@@ -80,7 +78,6 @@
 
 .ks__navbar-menu{
     margin-left: 1rem;
-
     display: none;
     position: relative;
 }
@@ -89,8 +86,6 @@
     cursor: pointer;
 
 }
-
-
 
 .ks__navbar-menu_container {
 

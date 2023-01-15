@@ -1,0 +1,29 @@
+.ks__review-badge_container {
+    /* background: linear-gradient(180deg, rgba(187, 239, 255, 0.24) 0%, rgba(187, 239, 255, 0) 100%); */
+    background-image: 
+    url( '../../assets/wave.svg' ),
+    url( '../../assets/wave-1.svg' );
+    
+}
+
+.ks__review {
+    display: flex;
+    /* flex-wrap: wrap; */
+    flex-direction: row;
+    gap: 22px;
+    justify-content: center;
+    align-items: center;
+}
+
+.ks__review div {
+    flex: 1;
+    max-width: 150px;
+    min-width: 20px;
+    margin: 1rem;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+

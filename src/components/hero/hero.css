@@ -2,7 +2,7 @@
     display: flex;
 }
 
-ks__header-content {
+.ks__header-content {
     flex: 1;
     display: flex;
     justify-content: center;
@@ -19,4 +19,118 @@ ks__header-content {
     font-size: 50px;
     line-height: 110%;
     font-feature-settings: 'salt' on, 'lign' off;
+}
+.ks__header-content p {
+    font-family:  var(--font-family);
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+    font-feature-settings: 'salt' on, 'liga' off;
+    color: var(--color-text);
+    margin-top: 1.5rem;
+}
+
+.ks__header-content__input {
+    width: 100%;
+    margin: 2rem 0 1rem;
+    display: flex;
+}
+
+.ks__header-content__input input {
+    flex: 2;
+    width: 100%;
+    min-height: 50px;
+    font-family: var(--font-family);
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 27px;
+    text-align: center;
+    color: var(--color-text);
+    background: none;
+    border: 2px solid var(--color-btn-border);
+    padding: 0 1rem;
+    outline: none;
+
+}
+
+.ks__header-content__input button {
+    flex: 0.6;
+    width: 100%;
+    min-height: 50px;
+    font-family: var(--font-family);
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 27px;
+
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    cursor: pointer;
+    outline: none;
+    color: #fff;
+    padding: 0 1rem;
+    border: none;
+    background: var(--color-btn-primary);
+}
+
+.ks__header-image {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.ks__header-image img {
+    width: 100%;
+    height: 100%;
+}
+
+@media screen and (max-width: 1050px) {
+    .ks__header {
+         flex-direction: column;
+    }
+
+    .ks__header-content {
+        margin: 0 0 3rem;
+    }
+}
+
+@media screen and (max-width: 650px) {
+    .ks__header  h1 {
+         font-size: 48px;
+         line-height: 60px;
+    }
+
+    .ks__header  p {
+        font-size: 16px;
+        line-height: 24px;
+   }
+   .ks__header-content__input input,
+   .ks__header-content__input button {
+        font-size: 16px;
+        line-height: 24px;
+   }
+
+}
+
+@media screen and (max-width: 490px) {
+
+    .ks__header  h1 {
+        font-size: 36px;
+        line-height: 48px;
+   }
+
+   .ks__header  p {
+       font-size: 14px;
+       line-height: 24px;
+  }
+
+  .ks__header-content__input input,
+   .ks__header-content__input button {
+        font-size: 12px;
+        line-height: 16px;
+   }
+
 }
