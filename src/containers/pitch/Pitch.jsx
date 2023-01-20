@@ -8,8 +8,8 @@ const Pitch = () => {
     <div className='pitch-section'>
     <h2> Pitch Section </h2>
     <Tailored />
-    <Logoclouds />
     <Democta />
+    <Logoclouds />
     </div>
   )
 }

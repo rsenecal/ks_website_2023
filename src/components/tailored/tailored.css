@@ -1,12 +1,12 @@
 .ks__tailored {
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
+    background: var(--color-footer);
     background:-moz-linear-gradient(90deg, #EBF5FF 0%, #FFFFFF 51%, #EBF5FF 100%); 
-
     background:-webkit-linear-gradient(90deg, #EBF5FF 0%, #FFFFFF 51%, #EBF5FF 100%);
-
     background:-o-linear-gradient(90deg, #EBF5FF 0%, #FFFFFF 51%, #EBF5FF 100%);
-
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#EBF5FF', endColorstr='#EBF5FF', GradientType=0 );
-
     background:-ms-linear-gradient(90deg, #EBF5FF 0%, #FFFFFF 51%, #EBF5FF 100%);
 
     background:linear-gradient(90deg, #EBF5FF 0%, #FFFFFF 51%, #EBF5FF 100%);
@@ -36,6 +36,7 @@
     justify-content: space-between;
     align-items: center;
     margin: 4rem 0 2rem;
+    gap: 2rem;
 
 }
 
@@ -47,6 +48,15 @@
     max-width: 510px;
 }
 
+.ks__tailored-heading p {
+    font-weight: var(--font-family);
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 30px;
+    color: var(--color-btn-primary);
+    cursor: pointer;
+}
+
 .ks__tailored-container {
     display: flex;
     flex-wrap: wrap;
@@ -54,7 +64,12 @@
     margin-top: 2rem;
 }
 
-
+.ks__tailored-image img {
+    width: 445px;
+    height: 525px;
+    left: 20px;
+    top: 20px;
+}
 
 .ks__tailored-container .ks__types-container__type {
     flex: 1;
